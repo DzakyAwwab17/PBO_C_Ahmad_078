@@ -5,8 +5,8 @@ public class SimpleLogin {
         Scanner scanner = new Scanner(System.in);
         
         // Data Mahasiswa (Ubah sesuai kebutuhan)
-        String namaMahasiswa = "Azril Kucai";
-        String nimMahasiswa = "202310370311069";
+        String namaMahasiswa = "Ahmad Dzaky";
+        String nimMahasiswa = "202410370110078";
 
         // Data Admin (3 digit terakhir dari NIM mahasiswa)
         String lastThreeDigitsNIM = nimMahasiswa.substring(nimMahasiswa.length() - 3);
