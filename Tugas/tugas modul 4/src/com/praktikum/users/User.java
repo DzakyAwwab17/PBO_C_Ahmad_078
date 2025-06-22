@@ -1,10 +1,25 @@
 package com.praktikum.users;
 
-import java.util.Scanner;
-
 public abstract class User {
-    public abstract boolean login(Scanner scanner);
-    public abstract void displayAppMenu();
+    protected String namaPengguna;
+    protected String kataSandi;
 
-    public abstract void displayInfo();
+    public User(String namaPengguna, String kataSandi) {
+        this.namaPengguna = namaPengguna;
+        this.kataSandi = kataSandi;
+    }
+
+    public String getNamaPengguna() {
+
+        return namaPengguna;
+
+    }
+
+    public String getKataSandi() {
+
+        return kataSandi;
+
+    }
+
+    public abstract String getPeran();
 }

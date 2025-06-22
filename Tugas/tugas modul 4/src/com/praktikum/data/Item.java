@@ -1,40 +1,28 @@
 package com.praktikum.data;
 
 public class Item {
-    private String itemName;
-    private String description;
-    private String location;
-    private String status; // "Reported" or "Claimed"
+    private String namaBarang;
+    private String deskripsi;
+    private String lokasi;
+    private String status;
 
-    public Item(String itemName, String description, String location) {
-        this.itemName = itemName;
-        this.description = description;
-        this.location = location;
-        this.status = "Reported"; // Default status when item is first reported
+    public Item(String namaBarang, String deskripsi, String lokasi, String status) {
+        this.namaBarang = namaBarang;
+        this.deskripsi = deskripsi;
+        this.lokasi = lokasi;
+        this.status = status;
     }
 
-    public String getItemName() {
-        return itemName;
+    public String getNamaBarang() {
+        return namaBarang;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public String getDeskripsi() {
+        return deskripsi;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
+    public String getLokasi() {
+        return lokasi;
     }
 
     public String getStatus() {
